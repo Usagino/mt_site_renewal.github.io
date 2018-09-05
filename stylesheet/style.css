@@ -1,0 +1,114 @@
+body {
+  height: 1000vh;
+}
+
+a {
+  color: black;
+}
+
+header {
+  width: 100vw;
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  background: white;
+  justify-content: space-between;
+  box-shadow: 0px 2px 4px rgba(153, 153, 153, 0.49);
+  height: 80px;
+}
+
+header .logo {
+  margin: 10px 100px;
+  font-size: 40px;
+}
+
+header .menu li {
+  line-height: calc(80px);
+  display: inline-block;
+  margin: 0 50px;
+  font-size: 1em;
+  position: relative;
+}
+
+header .menu li a {
+  color: black;
+}
+
+header .menu li span {
+  bottom: 34%;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  height: 5px;
+  width: 0px;
+  display: block;
+  transition: all 0.4s;
+}
+
+header .menu li:hover span {
+  padding: 0 10px;
+  width: 100px;
+}
+
+main {
+  padding-top: 80px;
+  width: 100vw;
+}
+
+main .maingraph {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+main .content_thumbnail {
+  height: 370px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+main .content_thumbnail_title {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100px;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-image: url(../material/tape.png);
+  height: 100px;
+  width: 300px;
+}
+
+main .content_section {
+  margin: 50px;
+}
+
+main .content_section_image {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+
+main .content_section p {
+  padding: 7px;
+  text-align: center;
+}
+
+main .content_buybutton {
+  width: 300px;
+  height: 40px;
+  background-color: #3d3d3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 50px;
+}
+
+main .content_buybutton p {
+  color: white;
+}
