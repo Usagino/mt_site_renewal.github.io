@@ -33,4 +33,11 @@ let app = new Vue({
 
 let footer = new Vue({
   el: "#footer"
-});
+})
+
+VueScrollTo.setDefaults({
+
+    duration: 1000,
+    easing: "ease-in-out",
+
+})
