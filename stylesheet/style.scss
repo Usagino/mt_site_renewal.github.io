@@ -91,6 +91,10 @@ main{
         display: flex;
         justify-content: space-between;
         margin: 50px auto;
+        img{
+          height: 250px;
+          width: auto;
+        }
       }
       p{
         padding: 7px;

@@ -99,6 +99,11 @@ main .content_section_image {
   margin: 50px auto;
 }
 
+main .content_section_image img {
+  height: 250px;
+  width: auto;
+}
+
 main .content_section p {
   padding: 7px;
   text-align: center;

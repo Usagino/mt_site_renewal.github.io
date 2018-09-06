@@ -21,7 +21,9 @@ Vue.component('content-com',{
     return{
       back:backt_and_title[i],
       title:backt_and_title[i],
+      tape:backt_and_title[i],
       section:sections[i++]
+
     }
   }
 })
