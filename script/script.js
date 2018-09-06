@@ -30,3 +30,7 @@ Vue.component('content-com',{
 let app = new Vue({
   el:"#contents"
 })
+
+let footer = new Vue({
+  el: "#footer"
+});

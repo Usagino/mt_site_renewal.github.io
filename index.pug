@@ -1,8 +1,11 @@
+mixin ulli(url,section)
+  li
+    a(href=`${url}`)= section
 <!DOCTYPE html>
 html(lang="en")
   include includes/header.pug
   body
-    header
+    header#top
       div.logo.header
         img(src="material/logo.svg")
       nav.menu.header
@@ -26,7 +29,47 @@ html(lang="en")
         content-com
         content-com
         content-com
-
-      include includes/component.pug
+      div#workshop.workshop
+        div.workshop_title
+          h1 WORK SHOP in
+        div.workshop_section
+          h2 マスキングテープでアート作品を作ってみよう！
+          p mt Art Tape の販売を記念して、<br>特別なワークショップを開催！<br>ショップや体験コーナーをお楽しみいただけます。
+          div.workshop_section_plans
+            p <b>日時 : 2018/6/19(火)〜7/2(月)</b>
+            p <b>　　月曜日〜土曜日 10:00〜20:00</b>
+            p <b>　　日曜・祝日 10:00〜19:00</b>
+          p <b>場所 : 金座・伊西屋 G.Itoya 1F 西京都中央区銅座2-7-15<b>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.1655652625795!2d139.76563121536154!3d35.672925080196265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188be403f25e65%3A0xbca8b97711e85d20!2z44CSMTA0LTAwNjEg5p2x5Lqs6YO95Lit5aSu5Yy66YqA5bqn77yS5LiB55uu77yX4oiS77yR77yV!5e0!3m2!1sja!2sjp!4v1536246754382" frameborder="0" style="border:0" allowfullscreen></iframe>
+      div#instagram.instagram
+        img(src="material/instagram.png")
+        <!-- InstaWidget -->
+        div.instagram_widget
+          <a href="https://instawidget.net/v/tag/mt%E3%83%9E%E3%82%B9%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%86%E3%83%BC%E3%83%97" id="link-206d3855bf4898c99fc2c17df81a610a539887b40c7c58c2ce08ffdbdc673459">#mtマスキングテープ</a>
+          <script src="https://instawidget.net/js/instawidget.js?u=206d3855bf4898c99fc2c17df81a610a539887b40c7c58c2ce08ffdbdc673459&width=900px"></script>
+        div.instagram_button
+          a(href="")
+            p mtオフィシャルオンラインショップ
+          a(href="")
+            p mtの楽しい使い方 gallery
+      
+    footer#footer
+      div.footerbutton(v-scroll-to="'#top'")
+        p ▲top
+      nav.footermenu
+        ul
+          +ulli("","会社概要")
+          +ulli("","mtの利用について")
+          +ulli("","利用規格")
+          +ulli("","販売店について")
+          +ulli("","サイトマップ")
+          +ulli("","お問い合わせ")
+      div.footer_image
+        img(src="material/footer_logo.png")
+        p Copyright © 2017 KAMOI KAKOSHI Co.,LTD. All Rights Reserved.
+              
+      
+    include includes/component.pug
+      
 
   include includes/footer.pug

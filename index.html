@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="stylesheet/style.css"/>
     <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet"/>
     <title>mtarttape</title>
   </head>
   <body>
-    <header>
+    <header id="top">
       <div class="logo header"><img src="material/logo.svg"/></div>
       <nav class="menu header">
         <ul>
@@ -34,28 +35,70 @@
         <content-com></content-com>
         <content-com></content-com>
       </div>
-      <script id="content-component" type="text/x-template">
-        <div class="content">
-          <div class="content_thumbnail"><img class="maingraph" v-bind:src="'material/back_'+back+'.png'"/>
-            <div class="content_thumbnail_title"><img v-bind:src="'material/title_'+title+'.png'"/>
-              <p>{{section}}</p>
-            </div>
-          </div>
-          <div class="content_section">
-            <p>描き方は自由自在。誰でもアーティスト。</p>
-            <p>日々の暮らしにアートを楽しむひとときを。</p>
-            <p>mtとアートの運命的な出会いから、</p>
-            <div class="content_section_image"><img v-bind:src="'material/' +tape+ '_tape_1.png'"/><img v-bind:src="'material/' +tape+ '_tape_2.png'"/><img v-bind:src="'material/' +tape+ '_tape_3.png'"/><img v-bind:src="'material/' +tape+ '_tape_4.png'"/><img v-bind:src="'material/' +tape+ '_tape_5.png'"/><img v-bind:src="'material/' +tape+ '_tape_6.png'"/><img v-bind:src="'material/' +tape+ '_tape_7.png'"/><img v-bind:src="'material/' +tape+ '_tape_8.png'"/><img v-bind:src="'material/' +tape+ '_tape_9.png'"/><img v-bind:src="'material/' +tape+ '_tape_10.png'"/></div>
-          </div>
-          <div class="content_buybutton"><a href="">
-              <div class="button">
-                <p>マスキングテープを購入する</p>
-              </div></a></div>
+      <div class="workshop" id="workshop">
+        <div class="workshop_title">
+          <h1>WORK SHOP in</h1>
         </div>
-      </script>
+        <div class="workshop_section">
+          <h2>マスキングテープでアート作品を作ってみよう！</h2>
+          <p>mt Art Tape の販売を記念して、<br>特別なワークショップを開催！<br>ショップや体験コーナーをお楽しみいただけます。</p>
+          <div class="workshop_section_plans">
+            <p><b>日時 : 2018/6/19(火)〜7/2(月)</b></p>
+            <p><b>　　月曜日〜土曜日 10:00〜20:00</b></p>
+            <p><b>　　日曜・祝日 10:00〜19:00</b></p>
+          </div>
+          <p><b>場所 : 金座・伊西屋 G.Itoya 1F 西京都中央区銅座2-7-15<b></p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.1655652625795!2d139.76563121536154!3d35.672925080196265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188be403f25e65%3A0xbca8b97711e85d20!2z44CSMTA0LTAwNjEg5p2x5Lqs6YO95Lit5aSu5Yy66YqA5bqn77yS5LiB55uu77yX4oiS77yR77yV!5e0!3m2!1sja!2sjp!4v1536246754382" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="instagram" id="instagram"><img src="material/instagram.png"/><!-- InstaWidget -->
+        <div class="instagram_widget"><a href="https://instawidget.net/v/tag/mt%E3%83%9E%E3%82%B9%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%86%E3%83%BC%E3%83%97" id="link-206d3855bf4898c99fc2c17df81a610a539887b40c7c58c2ce08ffdbdc673459">#mtマスキングテープ</a>
+<script src="https://instawidget.net/js/instawidget.js?u=206d3855bf4898c99fc2c17df81a610a539887b40c7c58c2ce08ffdbdc673459&width=900px"></script>
+        </div>
+        <div class="instagram_button"><a href="">
+            <p>mtオフィシャルオンラインショップ</p></a><a href="">
+            <p>mtの楽しい使い方 gallery</p></a></div>
+      </div>
     </main>
+    <footer id="footer">
+      <div class="footerbutton" v-scroll-to="'#top'">
+        <p>▲top</p>
+      </div>
+      <nav class="footermenu">
+        <ul>
+          <li><a href="">会社概要</a></li>
+          <li><a href="">mtの利用について</a></li>
+          <li><a href="">利用規格</a></li>
+          <li><a href="">販売店について</a></li>
+          <li><a href="">サイトマップ</a></li>
+          <li><a href="">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <div class="footer_image"><img src="material/footer_logo.png"/>
+        <p>Copyright © 2017 KAMOI KAKOSHI Co.,LTD. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script id="content-component" type="text/x-template">
+      <div class="content">
+        <div class="content_thumbnail"><img class="maingraph" v-bind:src="'material/back_'+back+'.png'"/>
+          <div class="content_thumbnail_title"><img v-bind:src="'material/title_'+title+'.png'"/>
+            <p>{{section}}</p>
+          </div>
+        </div>
+        <div class="content_section">
+          <p>描き方は自由自在。誰でもアーティスト。</p>
+          <p>日々の暮らしにアートを楽しむひとときを。</p>
+          <p>mtとアートの運命的な出会いから、</p>
+          <div class="content_section_image"><img v-bind:src="'material/' +tape+ '_tape_1.png'"/><img v-bind:src="'material/' +tape+ '_tape_2.png'"/><img v-bind:src="'material/' +tape+ '_tape_3.png'"/><img v-bind:src="'material/' +tape+ '_tape_4.png'"/><img v-bind:src="'material/' +tape+ '_tape_5.png'"/><img v-bind:src="'material/' +tape+ '_tape_6.png'"/><img v-bind:src="'material/' +tape+ '_tape_7.png'"/><img v-bind:src="'material/' +tape+ '_tape_8.png'"/><img v-bind:src="'material/' +tape+ '_tape_9.png'"/><img v-bind:src="'material/' +tape+ '_tape_10.png'"/></div>
+        </div>
+        <div class="content_buybutton"><a href="">
+            <div class="button">
+              <p>マスキングテープを購入する</p>
+            </div></a></div>
+      </div>
+    </script>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
   <script type="text/javascript" src="script/jquery-3.3.1.min.js"></script>
+  <script src="https://unpkg.com/vue-scrollto"></script>
   <script type="text/javascript" src="script/script.js"></script>
 </html>
