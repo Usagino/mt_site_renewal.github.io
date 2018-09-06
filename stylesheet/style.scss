@@ -1,8 +1,6 @@
 @import "_variable.scss";
 @import "_animation.scss";
-body{
-  height: 1000vh;
-}
+
 a{
   color: black;
 }
@@ -73,7 +71,15 @@ main{
         background-repeat: no-repeat;
         background-image: url(../material/tape.png);
         height: 100px;
-        width: 300px;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        img{
+          width: auto;
+          height: 60px;
+        }
       }
 
     }

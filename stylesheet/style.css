@@ -1,7 +1,3 @@
-body {
-  height: 1000vh;
-}
-
 a {
   color: black;
 }
@@ -80,7 +76,16 @@ main .content_thumbnail_title {
   background-repeat: no-repeat;
   background-image: url(../material/tape.png);
   height: 100px;
-  width: 300px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .content_thumbnail_title img {
+  width: auto;
+  height: 60px;
 }
 
 main .content_section {

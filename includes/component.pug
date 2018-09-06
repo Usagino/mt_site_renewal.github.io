@@ -1,0 +1,28 @@
+script#content-component(type="text/x-template")
+  div.content
+    div.content_thumbnail
+      img.maingraph(v-bind:src="'material/back_'+back+'.png'")
+      div.content_thumbnail_title
+        img(v-bind:src="'material/title_'+title+'.png'")
+        p {{section}}
+
+    div.content_section
+      p 描き方は自由自在。誰でもアーティスト。
+      p 日々の暮らしにアートを楽しむひとときを。
+      p mtとアートの運命的な出会いから、
+      div.content_section_image
+        img(src="material/tape_1.png")
+        img(src="material/tape_2.png")
+        img(src="material/tape_3.png")
+        img(src="material/tape_4.png")
+        img(src="material/tape_5.png")
+        img(src="material/tape_6.png")
+        img(src="material/tape_7.png")
+        img(src="material/tape_8.png")
+        img(src="material/tape_9.png")
+        img(src="material/tape_10.png")
+
+    div.content_buybutton
+      a(href="")
+        div.button
+          p マスキングテープを購入する
