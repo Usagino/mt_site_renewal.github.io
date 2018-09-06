@@ -1,3 +1,11 @@
+h1, h2 {
+  font-family: "Sawarabi Mincho";
+}
+
+span {
+  font-family: 'Bitter', serif;
+}
+
 a {
   color: black;
 }
@@ -14,14 +22,25 @@ header {
 }
 
 header .logo {
-  margin: 10px 100px;
-  font-size: 40px;
+  display: flex;
+  align-items: center;
+  margin: 0 40px;
+}
+
+header .logo img {
+  height: 50px;
+  width: auto;
+}
+
+header .menu ul {
+  height: 100%;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 header .menu li {
-  line-height: calc(80px);
-  display: inline-block;
-  margin: 0 50px;
   font-size: 1em;
   position: relative;
 }
@@ -47,8 +66,42 @@ header .menu li:hover span {
 }
 
 main {
-  padding-top: 80px;
   width: 100vw;
+}
+
+main .first {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../material/firstimage.png");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .first h1 {
+  color: white;
+  font-size: 44px;
+  margin: 30px;
+}
+
+main .first_introductuin {
+  width: 800px;
+  background: rgba(255, 255, 255, 0.8);
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+main .first_introductuin h2 {
+  font-size: 35px;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+main .first_introductuin p {
+  text-align: center;
+  line-height: 2em;
 }
 
 main .maingraph {
