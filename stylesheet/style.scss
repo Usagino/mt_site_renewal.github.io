@@ -190,7 +190,7 @@ main{
       top: 250px;
       left: 90px;
     }
-    
+
     &_image2{
       position: absolute;
       top: 150px;
@@ -280,6 +280,7 @@ footer{
   width: 100vw;
   border-top:$border;
   .footerbutton{
+    cursor: pointer;
     position: absolute;
     top: -27px;
     right: 40px;

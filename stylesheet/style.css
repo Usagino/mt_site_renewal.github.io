@@ -313,6 +313,7 @@ footer {
 }
 
 footer .footerbutton {
+  cursor: pointer;
   position: absolute;
   top: -27px;
   right: 40px;
