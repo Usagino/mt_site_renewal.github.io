@@ -164,6 +164,16 @@ main{
     }
   }
   .workshop{
+    &_image1{
+      position: absolute;
+      top: 250px;
+      left: 90px;
+    }
+    &_image2{
+      position: absolute;
+      top: 150px;
+      right: 120px;
+    }
     background: #F0F0F0;
     width: 100%;
     position: relative;

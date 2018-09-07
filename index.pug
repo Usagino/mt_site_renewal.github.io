@@ -4,7 +4,7 @@ mixin ulli(url,section)
 <!DOCTYPE html>
 html(lang="en")
   include includes/header.pug
-  body
+  body#app
     header#top
       div.logo.header
         img(src="material/logo.svg")
@@ -30,6 +30,8 @@ html(lang="en")
         content-com
         content-com
       div#workshop.workshop
+        img.workshop_image1(src="material/workshop_image_1.png")
+        img.workshop_image2(src="material/workshop_image_2.png")
         div.workshop_title
           h1 WORK SHOP in
         div.workshop_section

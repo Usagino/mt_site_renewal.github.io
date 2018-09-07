@@ -10,7 +10,7 @@ script#content-component(type="text/x-template")
       p 描き方は自由自在。誰でもアーティスト。
       p 日々の暮らしにアートを楽しむひとときを。
       p mtとアートの運命的な出会いから、
-      div.content_section_image
+      div.content_section_image(v-bind:id="'section_image_' + id_num")
         img(v-bind:src="'material/' +tape+ '_tape_1.png'")
         img(v-bind:src="'material/' +tape+ '_tape_2.png'")
         img(v-bind:src="'material/' +tape+ '_tape_3.png'")

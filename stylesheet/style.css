@@ -193,6 +193,18 @@ main .workshop {
   flex-direction: column;
 }
 
+main .workshop_image1 {
+  position: absolute;
+  top: 250px;
+  left: 90px;
+}
+
+main .workshop_image2 {
+  position: absolute;
+  top: 150px;
+  right: 120px;
+}
+
 main .workshop_title {
   margin: 20px 0;
   width: 560px;

@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet"/>
     <title>mtarttape</title>
   </head>
-  <body>
+  <body id="app">
     <header id="top">
       <div class="logo header"><img src="material/logo.svg"/></div>
       <nav class="menu header">
@@ -35,7 +35,7 @@
         <content-com></content-com>
         <content-com></content-com>
       </div>
-      <div class="workshop" id="workshop">
+      <div class="workshop" id="workshop"><img class="workshop_image1" src="material/workshop_image_1.png"/><img class="workshop_image2" src="material/workshop_image_2.png"/>
         <div class="workshop_title">
           <h1>WORK SHOP in</h1>
         </div>
@@ -88,7 +88,7 @@
           <p>描き方は自由自在。誰でもアーティスト。</p>
           <p>日々の暮らしにアートを楽しむひとときを。</p>
           <p>mtとアートの運命的な出会いから、</p>
-          <div class="content_section_image"><img v-bind:src="'material/' +tape+ '_tape_1.png'"/><img v-bind:src="'material/' +tape+ '_tape_2.png'"/><img v-bind:src="'material/' +tape+ '_tape_3.png'"/><img v-bind:src="'material/' +tape+ '_tape_4.png'"/><img v-bind:src="'material/' +tape+ '_tape_5.png'"/><img v-bind:src="'material/' +tape+ '_tape_6.png'"/><img v-bind:src="'material/' +tape+ '_tape_7.png'"/><img v-bind:src="'material/' +tape+ '_tape_8.png'"/><img v-bind:src="'material/' +tape+ '_tape_9.png'"/><img v-bind:src="'material/' +tape+ '_tape_10.png'"/></div>
+          <div class="content_section_image" v-bind:id="'section_image_' + id_num"><img v-bind:src="'material/' +tape+ '_tape_1.png'"/><img v-bind:src="'material/' +tape+ '_tape_2.png'"/><img v-bind:src="'material/' +tape+ '_tape_3.png'"/><img v-bind:src="'material/' +tape+ '_tape_4.png'"/><img v-bind:src="'material/' +tape+ '_tape_5.png'"/><img v-bind:src="'material/' +tape+ '_tape_6.png'"/><img v-bind:src="'material/' +tape+ '_tape_7.png'"/><img v-bind:src="'material/' +tape+ '_tape_8.png'"/><img v-bind:src="'material/' +tape+ '_tape_9.png'"/><img v-bind:src="'material/' +tape+ '_tape_10.png'"/></div>
         </div>
         <div class="content_buybutton"><a href="">
             <div class="button">
