@@ -51,33 +51,17 @@ for (let i = 0; i < 3; i++) {
 }
 console.log(tape_num_list);
 
-
-let app = new Vue({
-  el:'#contet',
-  data:{
-    scrollY: 0,
-    timer: null
+new Vue({
+  el: 'html',
+  data: {
+  	scrollY: 0
   },
-  created: function(){
-    //ハンドラを登録
-    window.addEventListener('scroll',this.handleScroll)
+  mounted() {
+  	window.addEventListener('scroll', this.handleScroll);
   },
-  beforeDestroy: function(){
-    //ハンドラを解除(コンポーネントやSPAの場合忘れずに)
-    window.removeEventListener('scroll',this.handleScroll)
-  },
-  methods:{
-     // 違和感のない程度に200ms感覚でデータを更新する例
-    handleScroll: function(){
-      if(this.timer === null){
-        this.timer = setTimeout(function(){
-          this.scrollY = window.scrollY
-           //スクロールごとにコンソールに現在の高さを表示
-          console.log(this.scrollY)
-          clearTimeout(this.timer)
-          this.timer = null
-        }.bind(this), 200)
-      }
+  methods: {
+    handleScroll() {
+  		this.scrollY = window.scrollY;
     }
   }
 })

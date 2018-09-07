@@ -77,34 +77,56 @@ main {
 main .first {
   height: 100vh;
   width: 100vw;
-  background-image: url("../material/firstimage.png");
-  background-repeat: no-repeat;
+  background: url("../material/mt_art_tape.gif") no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
-main .first h1 {
+main .first .backwhite {
+  contet: "";
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  opacity: 0;
+  animation: back_white 1s ease forwards 2s;
+}
+
+main .first img {
+  height: 100px;
+  width: auto;
+  opacity: 0;
   color: white;
   font-size: 44px;
   margin: 30px;
+  animation: title 1s ease forwards 2.5s;
 }
 
 main .first_introductuin {
   width: 800px;
-  background: rgba(255, 255, 255, 0.8);
   box-sizing: border-box;
   padding: 20px;
 }
 
 main .first_introductuin h2 {
+  opacity: 0;
+  animation: title 1s ease forwards 3s;
   font-size: 35px;
   text-align: center;
   line-height: 1.5em;
 }
 
 main .first_introductuin p {
+  opacity: 0;
+  animation: title 1s ease forwards 3.3s;
   text-align: center;
   line-height: 2em;
 }
@@ -324,4 +346,16 @@ footer .footer_image img {
   width: 100px;
   height: auto;
   margin: 20px;
+}
+
+@keyframes title {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes back_white {
+  100% {
+    opacity: 0.5;
+  }
 }

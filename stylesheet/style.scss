@@ -66,31 +66,52 @@ header{
   }
 }
 main{
+
   .first{
     height: 100vh;
     width: 100vw;
-    background-image: url("../material/firstimage.png");
-    background-repeat: no-repeat;
+    background:url("../material/mt_art_tape.gif") no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    h1{
+    position: relative;top: 0;left: 0;
+    .backwhite{
+      contet:"";
+      height: 100vh;
+      width: 100vw;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: white;
+      opacity: 0;
+      animation: back_white 1s ease forwards 2s;
+    }
+    img{
+      height: 100px;
+      width: auto;
+      opacity: 0;
       color:white;
       font-size: 44px;
       margin: 30px;
+      animation: title 1s ease forwards 2.5s;
     }
     &_introductuin{
       width: 800px;
-      background: rgba(#FFFFFF,0.8);
+
       box-sizing: border-box;
       padding: 20px;
       h2{
+        opacity: 0;
+        animation: title 1s ease forwards 3s;
         font-size: 35px;
         text-align: center;
         line-height: 1.5em;
       }
       p{
+        opacity: 0;
+        animation: title 1s ease forwards 3.3s;
         text-align: center;
         line-height: 2em;
 
@@ -291,5 +312,18 @@ footer{
       margin: 20px;
 
     }
+  }
+}
+
+@keyframes title{
+
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes back_white{
+
+  100%{
+    opacity: 0.5;
   }
 }
